@@ -44,7 +44,7 @@ It should show a completely rendered page in standard output.
 
 ### Warning
 
-**WEBrick** and **Thin** don't support multiple nested request so, using them it will
+**WEBrick** and **Thin** don't support multiple nested requests so, using them it will
 hang the request until a timeout is issued by the web server. To test it out you should
 consider using [unicorn](http://unicorn.bogomips.org/) with more than one worker thread.
 
