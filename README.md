@@ -17,7 +17,9 @@ and for low traffic situation, this plugin is not meant to support heavy traffic
 
 Add in your `Gemfile` a line with
 
+```ruby
     gem 'prerender_rails_embedded'
+```
 
 and launch a
 
@@ -25,9 +27,9 @@ and launch a
 
 to install it. Then in the `config/environment/production.rb` it should be added:
 
-    config.middleware.use Rack::Prerender
-        before_render: PrerenderRailsEmbedded.local_renderer
-
+```ruby
+    config.middleware.use Rack::Prerender before_render: PrerenderRailsEmbedded.local_renderer
+```
 
 ### <a id='test'></a>
 ### Test
@@ -49,6 +51,7 @@ consider using [unicorn](http://unicorn.bogomips.org/) with more than one worker
 Just add `gen unicorn` to your `Gemfile` launch `bundle install` create a `config/unicorn.rb`
 file with content (adjusting it to your needs)
 
+```ruby
     # config/unicorn.rb
     worker_processes 3
     timeout 30
@@ -74,11 +77,13 @@ file with content (adjusting it to your needs)
       defined?(ActiveRecord::Base) and
         ActiveRecord::Base.establish_connection
     end
-
+```
 
 and launch the web server with the command:
 
-    bundle exec unicorn -p 4000 -c ./config/unicorn.rb
+```shell
+    bundle exec unicorn -p 3000 -c ./config/unicorn.rb
+```
 
 ### <a id='todos'></a>
 ## TODOs
