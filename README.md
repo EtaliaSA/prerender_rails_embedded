@@ -38,7 +38,7 @@ To test the correct functioning of the `prerender_rails_embedded` gem just start
 with `rails s` and launch a curl to a (js generated) url like this:
 
     curl -H "User-Agent: Mozilla/5.0 baiduspider" \
-        "http://localhost:4000/articles/a0af82a84-d386-4690-9f68-81ac768bc6d3"
+        "http://localhost:3000/articles/a0af82a84-d386-4690-9f68-81ac768bc6d3"
 
 It should show a completely rendered page in standard output.
 
