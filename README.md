@@ -38,7 +38,7 @@ To test the correct functioning of the `prerender_rails_embedded` gem just start
 with `rails s` and launch a curl to a (js generated) url like this:
 
     curl -H "User-Agent: Mozilla/5.0 baiduspider" \
-        "http://localhost:4000/articles/a0af82a84-d386-4690-9f68-81ac768bc6d3"
+        "http://localhost:3000/articles/a0af82a84-d386-4690-9f68-81ac768bc6d3"
 
 It should show a completely rendered page in standard output.
 
@@ -84,6 +84,13 @@ and launch the web server with the command:
 ```shell
     bundle exec unicorn -p 3000 -c ./config/unicorn.rb
 ```
+
+To test the actual invokation 
+```shell
+$ curl -H 'User-Agent: baiduspider' https://dev.etalia.net/articles/a6c37930c-a3df-482d-b9e5-b4333473e1ae
+```
+
+
 
 ### <a id='todos'></a>
 ## TODOs
