@@ -85,6 +85,13 @@ and launch the web server with the command:
     bundle exec unicorn -p 3000 -c ./config/unicorn.rb
 ```
 
+To test the actual invokation 
+```shell
+$ curl -H 'User-Agent: baiduspider' https://dev.etalia.net/articles/a6c37930c-a3df-482d-b9e5-b4333473e1ae
+```
+
+
+
 ### <a id='todos'></a>
 ## TODOs
 
