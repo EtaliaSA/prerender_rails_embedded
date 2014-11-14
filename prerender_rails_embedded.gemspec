@@ -2,8 +2,8 @@
 
 Gem::Specification.new do |spec|
   spec.name          = 'prerender_rails_embedded'
-  spec.version       = '0.1.1'
-  spec.authors       = ['Gian Carlo Pace']
+  spec.version       = '0.2.0'
+  spec.authors       = ['Gian Carlo Pace', 'Luca Mirra']
   spec.email         = %w(giancarlo.pace@etalia.net)
   spec.description   = %q{A plugin for prerender_rails middleware to render JavaScript web app on the fly calling phantomjs directly}
   spec.summary       = %q{Prerender your backbone/angular/javascript rendered application on the fly when search engines crawl}
