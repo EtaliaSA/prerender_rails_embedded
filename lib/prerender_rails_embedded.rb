@@ -45,7 +45,7 @@ module PrerenderRailsEmbedded
   end
 
   def self.phantomjs_invocation(url)
-    [Phantomjs.path , '--load-images=false', '--ignore-ssl-errors=true', '--ssl-protocol=TLSv1', '--disk-cache=yes', '--max-disk-cache-size=524228', "#{File.dirname(__FILE__)}/prerender_rails_embedded.js", url]
+    [Phantomjs.path , '--load-images=false', '--ignore-ssl-errors=true', '--ssl-protocol=TLSv1', '--disk-cache=true', '--max-disk-cache-size=524228', "#{File.dirname(__FILE__)}/prerender_rails_embedded.js", url]
   end
 
   def self.local_renderer
